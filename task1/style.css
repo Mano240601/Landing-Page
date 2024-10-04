@@ -1,0 +1,324 @@
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #ffffff; /* White background */
+}
+
+/* Header Styles */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 3px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 2px 2px 5px rgb(255, 0, 0);
+    transition: background-color 0.3s ease;
+    height: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-links a:hover {
+    background-color: #ff7f50;
+    border-radius: 5px;
+    transform: translateY(-2px);
+}
+
+/* Active Link Style */
+.nav-links a.active {
+    border-bottom: 2px solid #ff7f50;
+    color: #ff7f50;
+}
+/* Hero Section Styles */
+.hero {
+    background-image: url("logo.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255); /* Dark overlay for better text contrast */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Make sure content is above the overlay */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 5px rgb(255, 0, 0); /* Softer text shadow */
+    color: #000000; /* Changed to white for better readability */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #000000; /* Changed to white for better readability */
+    animation: slideUpFadeIn 2s ease-in-out; /* Moved animation to the hero paragraph */
+}
+
+.button, .cta-btn {
+    background-color: #ff7f50; /* Main button color */
+    color: white;
+    padding: 15px 30px; /* Consistent padding */
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    animation: fadeIn 3s ease-in-out; /* Button fade-in */
+}
+
+.button:hover, .cta-btn:hover {
+    background-color: #ff4500; /* Hover color */
+    transform: scale(1.05);
+}
+.highlight {
+    font-weight: bold;
+    color: #ff7f50; /* Change to a color that fits your theme */
+    text-decoration: underline; /* Optional: adds an underline */
+}
+
+
+/* Animations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUpFadeIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* About Section */
+#about {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about p {
+    margin-bottom: 30px;
+}
+.highlight {
+    font-weight: bold;
+    color: #ff7f50; /* Custom color for highlights */
+    animation: fadeIn 1s ease-in-out;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Services Section */
+#services {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.service {
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background: rgba(88, 86, 86, 0.524);
+    box-shadow: 0 4px 10px rgb(255, 0, 0);
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgb(250, 4, 4);
+}
+.service:p{
+    color: #ffffff;
+}
+.service:h3{
+    color: #ffffff;
+}
+/* Contact Section */
+#contact {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fb1919;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 10 auto;
+    background: #848383;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact input, #contact textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+#contact input:focus, #contact textarea:focus {
+    border-color: #ff7f50;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    #about h2, #contact h2 {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}

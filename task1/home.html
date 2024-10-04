@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+            <img src="logo.png" alt="logo "width="90" height="90">
+                <h1> Multi-Services Solutions</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" >
+        <div class="hero-content">
+            <h1>Welcome to <strong>Multi-Services Solutions</strong></h1>
+            <p>Your trusted partner for reliable and efficient <span class="highlight">[insert product/service]</span>.</p>
+            <img src="logo.remove.png" alt="logo "width="250" height="250">
+            <div class="container">
+                <p>At <strong>Multi-Services Solutions</strong>, we specialize in providing top-notch <strong>[services/products]</strong> that cater to your specific needs. Whether you’re looking for <strong>[1.DIGITAL MARKETING]</strong>, <strong>[2.TRAVEL AGENCY]</strong>, <strong>[3.ONLINE COURSE]</strong>,<strong>[4.FOOD DELIVERY]</strong>,or <strong>[5.E-COMMERCE-SHOPPING</strong>, we ensure tailored solutions that drive results.</p>
+                <p>Our commitment to <strong>excellence</strong> sets us apart. With a team of experienced professionals and a <strong>customer-first approach</strong>, we work hard to deliver results that exceed expectations, ensuring that your satisfaction is our top priority.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>DIGITAL MARKETING</h3>
+            <img src="1.png" alt="logo "width="150" height="150">
+            <p>Digital marketing involves online strategies to promote products or services through channels like SEO, social media, and email marketing, helping businesses reach their target audience and drive conversions.</p>
+        </div>
+        <div class="service">
+            <h3>TRAVEL AGENCY</h3>
+            <img src="3.png" alt="logo "width="150" height="150">
+            <p>A travel agency offers personalized trip planning services, including booking flights, accommodations, and activities, ensuring clients have tailored and memorable travel experiences.</p>
+        </div>
+        <div class="service">
+            <h3>ONLINE COURSE </h3>
+            <img src="4.png" alt="logo "width="150" height="150">
+            <p>Online courses provide flexible learning opportunities on various subjects through internet-based platforms, allowing students to study at their own pace and earn certifications to enhance their careers.</p>
+        </div>
+        <div class="service">
+            <h3>FOOD DELIVERY</h3>
+            <img src="5.png" alt="logo "width="150" height="150">
+            <p>Food delivery services allow customers to order meals from local restaurants via apps or websites, offering convenience and variety by bringing delicious food directly to their doorsteps.</p>
+        </div>
+        <div class="service">
+            <h3>E-COMMERCE-SHOPPING</h3>
+            <img src="6.png" alt="logo "width="150" height="150">
+            <p>E-commerce shopping enables consumers to buy and sell products online, providing a wide range of options and the convenience of shopping anytime and anywhere, often with secure payment methods.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2><center>
+        <form action="#" method="post" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </center>
+    </section>
+<!-- About Section -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        At <span class="highlight">Multi-Services Solutions</span>, we are dedicated to providing exceptional services tailored to meet the diverse needs of our clients. Founded on the principles of <span class="highlight">integrity</span>, <span class="highlight">innovation</span>, and <span class="highlight">excellence</span>, our team is passionate about delivering high-quality solutions that drive success.
+    </p>
+
+    <p class="section-title"><span class="highlight">Our Mission</span></p>
+    <p>
+        Our mission is to empower businesses by offering a comprehensive range of services that enhance efficiency and foster growth. We believe in building long-lasting relationships with our clients, understanding their unique challenges, and providing effective solutions that deliver measurable results.
+    </p>
+
+    <p class="section-title"><span class="highlight">Our Team</span></p>
+    <p>
+        Our team comprises experienced professionals with expertise in various fields, including <span class="highlight">[specific areas of expertise]</span>. Each member brings a wealth of knowledge and a commitment to excellence, ensuring that we meet and exceed our clients' expectations.
+    </p>
+    <p>
+        Join us on our journey as we work towards your success. Together, we can achieve great things!
+    </p>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Company Name. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js.js"></script>
+    <script>
+        function validateForm() {
+            // Basic form validation logic
+            // You can add more validation rules as needed
+            return true; // Return false to prevent form submission
+        }
+    </script>
+</body>
+</html>
