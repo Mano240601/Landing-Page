@@ -40,20 +40,6 @@ This landing page showcases our diverse range of services, designed to meet the 
 ## 📞 Contact Us
 
 Have questions? Reach out to us!
-
-```html
-<form action="#" method="post" onsubmit="return validateForm()">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-    
-    <button type="submit">Send Message</button>
-</form>
 🌐 About Us
 At Multi-Services Solutions, we are committed to integrity, innovation, and excellence. Our team is dedicated to providing high-quality services tailored to your needs.
 
@@ -67,7 +53,7 @@ Our diverse team of professionals is ready to meet and exceed your expectations!
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/your-repo/multi-services-solutions.git
+git clone https://github.com/Mano240601/multi-services-solutions.git
 Open index.html in your browser to view the landing page.
 📄 License
 This project is licensed under the MIT License.
